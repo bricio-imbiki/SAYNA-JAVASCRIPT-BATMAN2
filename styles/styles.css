@@ -567,6 +567,7 @@ body {
     color: var(--color-blanc);
 }
 
+
 /* Styles pour les écrans de petite taille */
 
 @media screen and (max-width: 768px) {
