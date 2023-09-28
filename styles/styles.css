@@ -567,42 +567,6 @@ body {
     color: var(--color-blanc);
 }
 
-
-/* Styles généraux */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-}
-
-:root {
-    --color-jaune: #b8753a;
-    --color-jaunedeg: #8e5524;
-    --color-bleufonce: #19587d;
-    --color-rougefonce: #b11313;
-    --bg-color: #0d0e09;
-    --color-blanc1-degrade: #675f57;
-    --color-blanc2-degrade: #19587d;
-    --color-rouge-degrade: #890008;
-    --color-gris: #74665c;
-    --color-black: #000000;
-    --second-bg-color: #112e42;
-    --text-color: #ededed;
-    --main-color: #00abf0;
-    --color-blanc: #ffffff;
-}
-
-html {
-    font-size: 62.5%;
-    overflow-x: hidden;
-}
-
-
 /* Styles pour les écrans de petite taille */
 
 @media screen and (max-width: 768px) {
