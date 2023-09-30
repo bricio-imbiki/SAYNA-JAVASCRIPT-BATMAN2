@@ -2,129 +2,256 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SAYNA-JAVASCRIPT-PROJET1</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <!-- box icons -->
-    <link href="assets/icofont/icofont.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-- Favicons -->
-    <link href="assets/Illustrations/game/Batgame_6.png" rel="icon">
-    <meta name="author" content="Bricio Imbiki">
-    <meta name="description" content="SAYNA-JAVASCRIPT-PROJET1">
-    <meta property="og:description" content="This is a project quizz javascript at SAYNA">
-    <meta property="og:title" content="Metadata; The HTML &lt;head&gt;, on MDN">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman | Home</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link href="assets/Illustrations/home/Bathome13.png" rel="icon">
+
 </head>
 
 <body>
+
     <header class="header">
         <div class="logo">
             <a href="index.html"><img src="assets/Logos/logohome.png" alt="Logo"></a>
         </div>
         <nav class="navbar">
-            <a href="#">HOME</a>
-            <a href="index.html">GAME</a>
+            <a href="index.html">HOME</a>
+            <a href="game.html">GAME</a>
         </nav>
     </header>
+    <main>
 
-    <section class="home">
-        <div>
-            <h1 class="home-content">LET'S PLAY A <br> LITTLE GAME...</h1>
-            <div class="reseau">
-                <img src="assets/Logos/logo_bat_flèche.png" alt="" class="fleche1" id="scrollTriggerUp"><br>
-                <img src="assets/Logos/icon_facebook.png" alt="" class="logo_fb"><br>
-                <img src="assets/Logos/icon_ig.png" alt="" class="logo_ig"><br>
-                <img src="assets/Logos/icon_tw.png" alt="" class="logo_twitter">
-                <img src="assets/Logos/logo_twitter-clone.png" alt="" class="logo_twitter-clone">
-                <img src="assets/Logos/logo_bat_flèche_2.png" alt="" class="fleche2" id="scrollTriggerDown"><br>
-            </div>
+        <div class="reseau">
+            <img src="assets/Logos/logo_bat_flèche.png" alt="" class="fleche1" id="scrollTriggerUp"><br>
+            <img src="assets/Logos/icon_facebook.png" alt="" class="logo_fb"><br>
+            <img src="assets/Logos/icon_ig.png" alt="" class="logo_ig"><br>
+            <img src="assets/Logos/icon_tw.png" alt="" class="logo_twitter">
+            <img src="assets/Logos/logo_twitter-clone.png" alt="" class="logo_twitter-clone">
+            <img src="assets/Logos/logo_bat_flèche_2.png" alt="" class="fleche2" id="scrollTriggerDown"><br>
+        </div>
 
-            <div class="batgame" id="batgame">
-                <img src="assets/Logos/flèche_down_header.png" alt="fleche-bas" id="scrollDownButton" class="fleche_down"><br>
-                <h2 id="animated-text">CONNAISSEZ VOUS BIEN LE CHEVALIER NOIR ? </h2>
-                <img src="assets/Illustrations/game/Batgame_2.png" alt="Batgame_2" class="imagebat" />
-            </div>
-            <p></p>
-            <div class="btn-box">
-                <a href="#" id="startQuizButton">DÉMARRER LE QUIZ</a>
-            </div>
-            <!-- Ajoutez le contenu du quiz mais initialement masqué -->
-            <div class="ma-balise" id="quizContainer" style="display: none;">
-                <!-- Le contenu du quiz que vous avez fourni -->
-
-                <!--    QUIZ 1-->
-
-
-                <section id="questionnaire" class="questionnaires">
-                    <div class="compteur">
-                        <h1><span class="debut-compteur"></span>/<span class="fin-compteur"></span></h1>
-                    </div>
-                    <div class="question">
-                        <div class="ct">
-                            <h1 class="sujet"></h1>
-                        </div>
-
-                        <div id="ct2" class="ct2 hidden"><br>
-
-                            <div class="case-cont1">
-                                <input type="checkbox" name="case1" id="case1" class="cases">
-                                <label for="case1" class="choix1"></label>
-                            </div>
-                            <br>
-                            <div class="case-cont2">
-                                <input type="checkbox" name="case2" id="case2" class="cases">
-                                <label for="case2" class="choix2"></label>
-                            </div>
-                            <br>
-                            <div class="case-cont3">
-                                <input type="checkbox" name="case3" id="case3" class="cases">
-                                <label for="case3" class="choix3"></label>
-                            </div>
-                            <br>
-                            <!-- Ajoutez le quatrième champ de case à cocher et le quatrième choix de réponse ici -->
-                            <div class="case-cont4">
-                                <input type="checkbox" name="case4" id="case4" class="cases" style="display: none;">
-                                <label for="case4" class="choix4" style="display: none;"></label>
-                            </div>
-
-
-                            <img src="" id="perso1" alt="premier image" style="display: none;">
-                            <img src="" id="perso2" alt="premier image">
-                            <img src="" id="perso3" alt="premier image">
-                            <img src="" id="perso4" alt="premier image">
-                            <img src="" id="perso5" alt="premier image">
-                            <img src="" id="perso6" alt="premier image">
-                            <img src="" id="perso7" alt="premier image">
-                            <img src="" id="perso8" alt="premier image">
-                            <img src="" id="perso9" alt="premier image">
-                            <img src="" id="perso10" alt="premier image">
-                            <!-- Bouton pour le quiz (initialement masqué) -->
-
-                            <div class="quizButton" id="quizButton">
-                                <a href="#" id="btn-change1">QUESTION SUIVANTE</a>
-                            </div>
-                            <div class="quizresultat" id="quizresultat" style="display: none;">
-                                <a href="#" id="btn-change2">VOIR MON RÉSULTAT</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div id="affiche-resultat" class="card" style="display: none;">
-                <div class="card-body">
-                    <h1 class="card-title" id="resultat"></h1>
-                    <p class="card-text" id="message"></p>
-                    <div class="retour" id="retour">
-                        <a href="#" id="recommencer" class="btn btn-primary">RECOMMENCER LE QUIZ</a>
+        <section id="hero">
+            <div class="container">
+                <div class="content">
+                    <p class="texte animationElement">Au nom de ses parents assassinés, Bruce Wayne mène une guerre éternelle contre les criminels de Gotham City. Il est vengeur. Il est la nuit.</p>
+                    <h2 class="titre-hero animationElement">Il est Batman.</h2>
+                    <div class="cta animationElement">
+                        <a class="btn" href="#batman-cinema">Voir le héros</a>
+                        <a class="btn" href="#enemis">Les adversaires</a>
                     </div>
                 </div>
             </div>
+            <img src="assets/Logos/flèche_down_header.png" alt="fleche-bas" id="scrollDownButton" class="fleche_down"><br>
+        </section>
 
-        </div>
-    </section>
+        <section class="batman-cinema" id="batman-cinema">
+            <div class="container ">
+                <h1 class="titre animationElement">Batman au cinéma</h1>
+                <p class="description animationElement">
+                    Le personnage de Batman est un super héros de l’univers de DC Comics. Il a été créé par le dessinateur Bob Kane et le scénariste Bill Finger et apparaît pour la première fois dans le comic book Detective Comics en 1939. Batman se différencie de Superman,
+                    alors héros majeur de DC, car il n’a aucun pouvoir. Il sera porté au cinema pour la première fois en 1943 par Lewis Wilson et bénéficiera de nombreux reboot, donnant l’occasion à de multiples acteurs d’interpréter l’homme chauve-souris.
+                    Voici les trois derniers :
+                </p>
+                <div class="batman-personnage animationElement">
+                    <div class="perso-item zoom">
+                        <img src="assets/Illustrations/home/Bathome2.png" alt="Batman 1">
+                        <div class="perso-info">
+                            <h3>Robert Pattinson</h3>
+                            <p>(2022)</p>
+                        </div>
+                    </div>
+                    <div class="perso-item zoom">
+                        <img src="./assets/Illustrations/home/Bathome3.png" alt="Batman 2">
+                        <div class="perso-info">
+                            <h3>Christian Bale</h3>
+                            <p>(2006-2008-2012)</p>
+                        </div>
+                    </div>
+                    <div class="perso-item zoom">
+                        <img src="assets/Illustrations/home/Bathome4.png" alt="Batman 3">
+                        <div class="perso-info">
+                            <h3>Ben Affleck</h3>
+                            <p>20016-2017/2020-2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="batman-cinema animationElement" id="enemis">
+            <div class="container">
+                <img id="bat-item" class="animationElement" src="assets/Illustrations/home/Bathome13.png" alt="">
+                <h1 class="titre animationElement">Némésis</h1>
+                <p class="description animationElement">
+                    Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart du temps, des vilains sans capacités surnaturelles mais particulièrement violents ou psychopathes. Avec son introduction dans la Justice League il aura l’occasion
+                    de se mesurer à des antagonistes qui défient l’imagination et les lois de la physique. Parmi les derniers ennemis emblématiques que nous avons pu voir au cinéma, on retrouve :
+                </p>
+                <div class="batman-personnage animationElement">
+                    <div class="perso-item zoom">
+                        <img src="assets/Illustrations/home/Bathome5.png" alt="Batman 1">
+                        <div class="perso-info">
+                            <h3>The Riddler</h3>
+                            <p>Paul Dano - 2022</p>
+                        </div>
+                    </div>
+                    <div class="perso-item zoom">
+                        <img src="assets/Illustrations/home/Bathome6.png" alt="Batman 2">
+                        <div class="perso-info">
+                            <h3>Le Joker</h3>
+                            <p>Heath Ledger - 2008</p>
+                        </div>
+                    </div>
+                    <div class="perso-item zoom">
+                        <img src="assets/Illustrations/home/Bathome7.png" alt="Batman 3">
+                        <div class="perso-info">
+                            <h3>Darkseid</h3>
+                            <p>Ray Porter - 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="batman-cinema">
+            <img class="bat-cote" src="assets/Illustrations/home/Bathome12.png" alt="">
+            <div class="container" id="allie">
+                <h1 class="titre animationElement">Alliés</h1>
+                <p class="description animationElement">
+                    Alfred est le majordome des Wayne. A leur mort il s’occupe de l’éducation du jeune Bruce avant de l’assister dans son rôle du Batman. Ce dernier rencontrera Catwoman dès le premier numéro des aventures de l’homme-chauve souris en 1940. Tantôt ennemie
+                    tantôt alliée la jeune femme fatale fera tourner la tête de Batman à maintes reprises. Du côté de la police, Bruce pourra compter sur l’aide infaillible de James Gordon, “Jim , qui désire lui aussi nettoyer sa ville de la criminalité
+                    qui y règne.
+                </p>
+                <div class="batman-personnage animationElement">
+                    <div class="perso-item zoom">
+                        <img src="assets/Illustrations/home/Bathome8.png" alt="Batman 1">
+                        <div class="perso-info">
+                            <h3> Alfred Pennyworth</h3>
+                            <p>Michael Cain - (2006-2008-2012)</p>
+                        </div>
+                    </div>
+                    <div class="perso-item zoom">
+                        <img src="assets/Illustrations/home/Bathome9.png" alt="Batman 2">
+                        <div class="perso-info">
+                            <h3> Alfred Pennyworth</h3>
+                            <p>Michael Cain - 2008</p>
+                        </div>
+                    </div>
+                    <div class="perso-item zoom">
+                        <img src="assets/Illustrations/home/Bathome10.png" alt="Batman 3">
+                        <div class="perso-info">
+                            <h3>James Gordon</h3>
+                            <p>(2014-2019)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="batman-cinema">
+            <div class="container">
+                <h1 class="titre animationElement">Justice League</h1>
+                <p class="description animationElement">
+                    Lorsque la Terre est menacée les plus grands super-héros s’allient pour la protéger. Ils doivent cependant apprendre à se faire confiance mutuellement et à faire équipe ce qui ne sera pas chose aisée. Ensemble ils forment la Justice League, les plus grands
+                    super-héros de la Terre, ceux vers qui le monde entier se tourne lorsque les menaces extraterrestres ou surnaturelles menacent son existence.
+                </p>
+            </div>
+            <div id="justice-league-img" class="zoom">
+                <img src="assets/Illustrations/home/Bathome11.png" alt="Justice League">
+            </div>
+        </section>
+
+        <section id="multimedia">
+            <div class="container animationElement">
+                <h1 class="titre">Multimédia</h1>
+                <div>
+                    <button><img src="assets/Logos/icon_flèche_1.png" alt=""></button>
+
+                    <div class="slide">
+                        <div class="slide-img">
+                            <img src="assets/Illustrations/home/Bathome_ba1.png" alt="">
+                        </div>
+                        <div class="slide-text">
+                            <h2>ACTION, ADVENTURE</h2>
+                            <h3>Batman Begins</h3>
+                            <p>IMDB: <span>8.2</span></p>
+                            <p>
+                                Le jeune Bruce Wayne assiste impuissant au meurtre de ses parents. Profondément traumatisé, il grandit obnubilé par un désir de vengeance. La Ligue des ombres, une secte de guerriers ninja dirigée par Ra's al Ghul, se chargera de son entraînement. De
+                                retour chez lui à Gotham, avec l'aide de son majordome Alfred Pennyworth, Bruce Wayne se lance alors dans la lutte contre le crime sous le nom de Batman.
+                            </p>
+                        </div>
+                    </div>
+
+                    <button><img src="assets/Logos/icon_flèche_2.png"  alt=""></button>
+                </div>
+                <div class="trailer-img">
+                    <img class="zoom" src="assets/Illustrations/home/Bathome_ba2.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="animationElement">
+            <div class="formulaire ">
+                <h2 class="animationElement">PRENONS CONTACT</h2>
+                <form action="">
+                    <label for="email" class="titre-label">Adresse Email</label>
+                    <input type="email" name="email" id="" placeholder="Adresse Email">
+                    <label for="newsletter" class="titre-label">Newsletter</label>
+                    <label id="checkbox" for="checkbox">En cochant cette case vous acceptez de recevoir l’actualité concernant les<br> aventures de Batman :</label>
+                    <input type="checkbox" name="checkbox" id="">
+                    <div>
+                        <p id="frequence">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</p>
+                        <span class="icon">
+                            <img src="assets/Logos/icon_flèche_2.png" alt="">
+                        </span>
+                    </div>
+                    <div>
+                        <p class="news">souhaitez-vous recevoir des news</p>
+                    </div>
+                    <div class="btn-group">
+                        <label for="">Des films</label>
+                        <label for="">Des comics</label>
+                        <label for="">De tout</label>
+                    </div>
+                    <p class="titre-label">Message</p>
+                    <textarea name="" id="textarea" placeholder="Laissez un commentaire pour la communauté"></textarea>
+                    <input type="submit" class="animationElement" value="CONFIRMER">
+                </form>
+            </div>
+        </section>
+
+        <section id="citation">
+            <div class="container">
+                <div class="guillemet-open animationElement">
+                    <img src="./assets/Logos/icon_guillemets_1.png" alt="">
+                </div>
+                <div class="item-citation animationElement">
+                    <div>
+                        <p class="text-citation">La seule façon raisonnable de vivre en ce bas monde,<br>c'est en dehors des règles.</p>
+                    </div>
+                    <div class="auteur-citation animationElement">
+                        The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)
+                    </div>
+                    <div style="display: flex; justify-content: center ;">
+                        <div class="point p1"></div>
+                        <div class="point p2"></div>
+                        <div class="point p3"></div>
+                        <div class="point p4"></div>
+                        <div class="point p5"></div>
+                        <div class="point p6"></div>
+                        <div class="point p7"></div>
+                        <div class="point p8"></div>
+                        <div class="point p9"></div>
+                    </div>
+                </div>
+                <div class="guillemet-close animationElement">
+                    <img src="./assets/Logos/icon_guillemets_2.png" alt="">
+                </div>
+            </div>
+        </section>
+
+    </main>
     <footer class="footer">
         <div>
             <img src="assets/Logos/icon_WB.png" class="icon_wb">
@@ -139,7 +266,8 @@
             <img src="assets/Logos/icon_tw.png" class="reseau" alt="tw">
         </div>
     </footer>
-    <script src="js/script.js"></script>
+
+    <script src="js/home.js"></script>
 
 </body>
 
