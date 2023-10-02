@@ -18,7 +18,6 @@ window.addEventListener('scroll', updateImagePosition);
 updateImagePosition();
 
 
-
 // script.js bat_fleche down and up
 document.addEventListener('DOMContentLoaded', function() {
     // Récupérez les éléments images par leur ID
@@ -110,4 +109,97 @@ document.addEventListener('DOMContentLoaded', function() {
     // Lancez le défilement continu lorsque le clic est maintenu enfoncé
     scrollTriggerDown.addEventListener('mousedown', continueScrollingDown);
     scrollTriggerUp.addEventListener('mousedown', continueScrollingUp);
+});
+//const titre = [document.getElementById('titre1'), document.getElementById('titre2'), document.getElementById('titre3'), document.getElementById('titre4')];
+//const description = [document.getElementById('desc1'), document.getElementById('desc2'), document.getElementById('desc3'), document.getElementById('desc4')];
+
+var titre1 = document.querySelector('.titre1');
+var titre2 = document.querySelector('.titre2');
+var titre3 = document.querySelector('.titre3');
+var titre4 = document.querySelector('.titre4');
+var titre5 = document.querySelector('.titre5');
+
+var desc1 = document.querySelector('.desc1');
+var desc2 = document.querySelector('.desc2');
+var desc3 = document.querySelector('.desc3');
+var desc4 = document.querySelector('.desc4');
+var hero = document.querySelector('.hero');
+window.addEventListener("scroll", function() {
+    var scrollPosition = window.scrollY;
+
+    // Ajuster les valeurs top et right en fonction de la position de défilement
+    if (scrollPosition >= 0 && scrollPosition < 270) {
+        hero.style.top = "-10px";
+        hero.style.right = "0px";
+        hero.style.opacity = '1';
+        hero.style.opacity = '1';
+    } else if (scrollPosition > 300 && scrollPosition < 950) {
+        titre1.style.top = "-10px";
+        titre1.style.right = "0px";
+        desc1.style.top = "-10px";
+        desc1.style.right = "0px";
+        titre1.style.opacity = '1';
+        desc1.style.opacity = '1';
+
+    } else if (scrollPosition > 1200 && scrollPosition < 1800) {
+        titre2.style.top = "-10px";
+        titre2.style.right = "0px";
+        desc2.style.top = "-10px";
+        desc2.style.right = "0px";
+        titre2.style.opacity = '1';
+        desc2.style.opacity = '1';
+    } else if (scrollPosition > 1950 && scrollPosition < 2500) {
+        titre3.style.top = "-10px";
+        titre3.style.right = "0px";
+        desc3.style.top = "-10px";
+        desc3.style.right = "0px";
+        titre3.style.opacity = '1';
+        desc3.style.opacity = '1';
+    } else if (scrollPosition > 3000 && scrollPosition < 3500) {
+        titre4.style.opacity = '1';
+        desc4.style.opacity = '1';
+        titre4.style.top = "-10px";
+        titre4.style.right = "0px";
+        desc4.style.top = "-10px";
+        desc4.style.right = "0px";
+    } else if (scrollPosition > 4000 && scrollPosition < 4500) {
+        titre5.style.opacity = '1';
+        titre5.style.top = "-10px";
+        titre5.style.right = "0px";
+    } else {
+        hero.style.opacity = '0';
+        hero.style.top = "0px";
+        hero.style.right = "925px";
+        titre1.style.opacity = '0';
+        titre1.style.top = "-300px";
+        titre1.style.right = "925px";
+        desc1.style.opacity = '0';
+        desc1.style.top = "-200px";
+        desc1.style.right = "925px";
+
+        titre2.style.opacity = '0';
+        titre2.style.top = "-300px";
+        titre2.style.right = "925px";
+        desc2.style.top = "-200px";
+        desc2.style.right = "925px";
+        desc2.style.opacity = '0';
+
+        titre3.style.opacity = '0';
+        titre3.style.top = "-300px";
+        titre3.style.right = "925px";
+        desc3.style.top = "-200px";
+        desc3.style.right = "925px";
+        desc3.style.opacity = '0';
+
+        titre4.style.opacity = '0';
+        titre4.style.top = "-300px";
+        titre4.style.right = "925px";
+        desc4.style.top = "-200px";
+        desc4.style.right = "925px";
+        desc4.style.opacity = '0';
+
+        titre5.style.opacity = '0';
+        titre5.style.top = "-300px";
+        titre5.style.right = "925px";
+    }
 });

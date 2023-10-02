@@ -54,8 +54,6 @@ function animateElements() {
 
 // Ajoutez un gestionnaire d'événements de défilement pour appeler la fonction animateElements
 window.addEventListener('scroll', animateElements);
-
-// Appelez également la fonction une fois au chargement de la page pour gérer les cas où les éléments sont déjà visibles sans défilement initial
 animateElements();
 
 
