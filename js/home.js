@@ -133,7 +133,7 @@ window.addEventListener("scroll", function() {
         hero.style.right = "0px";
         hero.style.opacity = '1';
         hero.style.opacity = '1';
-    } else if (scrollPosition > 300 && scrollPosition < 950) {
+    } else if (scrollPosition > 300 && scrollPosition < 1070) {
         titre1.style.top = "-10px";
         titre1.style.right = "0px";
         desc1.style.top = "-10px";
@@ -141,28 +141,28 @@ window.addEventListener("scroll", function() {
         titre1.style.opacity = '1';
         desc1.style.opacity = '1';
 
-    } else if (scrollPosition > 1200 && scrollPosition < 1800) {
+    } else if (scrollPosition > 1200 && scrollPosition < 1950) {
         titre2.style.top = "-10px";
         titre2.style.right = "0px";
         desc2.style.top = "-10px";
         desc2.style.right = "0px";
         titre2.style.opacity = '1';
         desc2.style.opacity = '1';
-    } else if (scrollPosition > 1950 && scrollPosition < 2500) {
+    } else if (scrollPosition > 2200 && scrollPosition < 2940) {
         titre3.style.top = "-10px";
         titre3.style.right = "0px";
         desc3.style.top = "-10px";
         desc3.style.right = "0px";
         titre3.style.opacity = '1';
         desc3.style.opacity = '1';
-    } else if (scrollPosition > 3000 && scrollPosition < 3500) {
+    } else if (scrollPosition > 3050 && scrollPosition < 3700) {
         titre4.style.opacity = '1';
         desc4.style.opacity = '1';
         titre4.style.top = "-10px";
         titre4.style.right = "0px";
         desc4.style.top = "-10px";
         desc4.style.right = "0px";
-    } else if (scrollPosition > 4000 && scrollPosition < 4500) {
+    } else if (scrollPosition > 3900 && scrollPosition < 4500) {
         titre5.style.opacity = '1';
         titre5.style.top = "-10px";
         titre5.style.right = "0px";
