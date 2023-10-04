@@ -186,8 +186,12 @@ body {
     padding: 5%;
     width: 80%;
     margin: 0 auto;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.4s ease-in-out;
+}
+
+.perso-container:hover .perso-info {
+    opacity: 1;
 }
 
 .perso-info p {
