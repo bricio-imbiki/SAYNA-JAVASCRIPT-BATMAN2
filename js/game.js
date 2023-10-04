@@ -202,7 +202,7 @@ startQuizButton.addEventListener('click', function(event) {
 
 const questions = [{
         "question": "Quel est l’autre nom de l’Homme-Mystère ?",
-        "imageURL1": "assets/Illustrations/game/Batgame_3.png",
+        "imageURL1": "../assets/Illustrations/game/Batgame_3.png",
         "response": [{
                 "text": "Le Saphinx",
                 "isGood": true
@@ -219,7 +219,7 @@ const questions = [{
     },
     {
         "question": "Quelle est l’ancienne profession de Harley Quinn ?",
-        "imageURL1": "assets/Illustrations/game/Batgame_4.png",
+        "imageURL1": "../assets/Illustrations/game/Batgame_4.png",
         "response": [{
                 "text": "Infimière",
                 "isGood": false
@@ -236,7 +236,7 @@ const questions = [{
     },
     {
         "question": "Quel est l’objet fétiche de Double Face ?",
-        "imageURL1": "assets/Illustrations/game/Batgame_5.png",
+        "imageURL1": "../assets/Illustrations/game/Batgame_5.png",
         "response": [{
                 "text": "Une pièce",
                 "isGood": true
@@ -253,7 +253,7 @@ const questions = [{
     },
     {
         "question": "Qui a produit Batman en 1964 ?",
-        "imageURL1": "assets/Illustrations/game/Batgame_6.png",
+        "imageURL1": "../assets/Illustrations/game/Batgame_6.png",
         "response": [{
                 "text": "Stanley Kubrick ",
                 "isGood": true
@@ -270,7 +270,7 @@ const questions = [{
     },
     {
         "question": "Batman c’est aussi le nom d’une ville en...",
-        "imageURL1": "assets/Illustrations/game/Batgame_7.png",
+        "imageURL1": "../assets/Illustrations/game/Batgame_7.png",
         "response": [{
                 "text": "Islande",
                 "isGood": false
@@ -287,9 +287,9 @@ const questions = [{
     },
     {
         "question": "Quel vilain apparaît pour la première fois dans le Batman 232 ?",
-        "imageURL2": "assets/Illustrations/game/Batgame_8.png", //question 6
-        "imageURL3": "assets/Illustrations/game/Batgame_9.png",
-        "imageURL4": "assets/Illustrations/game/Batgame_9-1.png",
+        "imageURL2": "../assets/Illustrations/game/Batgame_8.png", //question 6
+        "imageURL3": "../assets/Illustrations/game/Batgame_9.png",
+        "imageURL4": "../assets/Illustrations/game/Batgame_9-1.png",
         "response": [{
                 "text": "Le Pingouin",
                 "isGood": true
@@ -306,7 +306,7 @@ const questions = [{
     },
     {
         "question": "Quelle ville Batman défend-il ?",
-        "imageURL1": "assets/Illustrations/game/Batgame_10.png",
+        "imageURL1": "../assets/Illustrations/game/Batgame_10.png",
 
         "response": [{
                 "text": "Gotham City",
@@ -324,7 +324,7 @@ const questions = [{
     },
     {
         "question": "Tim Burtin a réalisé deux Batman, qui jouait Batman ?",
-        "imageURL1": "assets/Illustrations/game/Batgame_11.png",
+        "imageURL1": "../assets/Illustrations/game/Batgame_11.png",
         "response": [{
                 "text": "Georges Clooney",
                 "isGood": false
@@ -341,9 +341,9 @@ const questions = [{
     },
     {
         "question": "Dans son premier Batman (1989) Jack Nicholson jouait :",
-        "imageURL5": "assets/Illustrations/game/Batgame_12.png", //question 9
-        "imageURL6": "assets/Illustrations/game/Batgame_13.png",
-        "imageURL7": "assets/Illustrations/game/Batgame_13-1.png",
+        "imageURL5": "../assets/Illustrations/game/Batgame_12.png", //question 9
+        "imageURL6": "../assets/Illustrations/game/Batgame_13.png",
+        "imageURL7": "../assets/Illustrations/game/Batgame_13-1.png",
 
         "response": [{
                 "text": "Le Pingouin",
@@ -361,9 +361,9 @@ const questions = [{
     },
     {
         "question": "Qui est Jonathan Crane ? ", //question 10
-        "imageURL8": "assets/Illustrations/game/Batgame_14.png",
-        "imageURL9": "assets/Illustrations/game/Batgame_15.png",
-        "imageURL10": "assets/Illustrations/game/Batgame_16.png",
+        "imageURL8": "../assets/Illustrations/game/Batgame_14.png",
+        "imageURL9": "../assets/Illustrations/game/Batgame_15.png",
+        "imageURL10": "../assets/Illustrations/game/Batgame_16.png",
         "response": [{
                 "text": "L’Épouvantail",
                 "isGood": false
@@ -380,7 +380,7 @@ const questions = [{
     },
     {
         "question": "Qui est l’interprète de Catwoman dans le nouveau Batman de Matt Reeves (2022) ?",
-        "imageURL1": "assets/Illustrations/game/Batgame_17.png",
+        "imageURL1": "../assets/Illustrations/game/Batgame_17.png",
         "response": [{
                 "text": "Emma Watson",
                 "isGood": false
@@ -401,7 +401,7 @@ const questions = [{
     },
     {
         "question": "Quel est le prénom des parents du jeune Bruce Wayne ?",
-        "imageURL1": "assets/Illustrations/game/Batgame_18.png",
+        "imageURL1": "../assets/Illustrations/game/Batgame_18.png",
         "response": [{
                 "text": "Matina et Adam",
                 "isGood": false
@@ -418,7 +418,7 @@ const questions = [{
     },
     {
         "question": "Qui interprète le Joker en 2008 ?",
-        "imageURL1": "assets/Illustrations/game/Batgame_19.png",
+        "imageURL1": "../assets/Illustrations/game/Batgame_19.png",
         "response": [{
                 "text": "Heath Ledger",
                 "isGood": false
@@ -435,7 +435,7 @@ const questions = [{
     },
     {
         "question": "En quelle année Robin fait il sa première apparition ?",
-        "imageURL1": "assets/Illustrations/game/Batgame_20.png",
+        "imageURL1": "../assets/Illustrations/game/Batgame_20.png",
         "response": [{
                 "text": "1940",
                 "isGood": true
@@ -452,7 +452,7 @@ const questions = [{
     },
     {
         "question": "Qui est la fille de Batman et Catwoman (Earth - 2) ?",
-        "imageURL1": "assets/Illustrations/game/Batgame_21.png",
+        "imageURL1": "../assets/Illustrations/game/Batgame_21.png",
         "response": [{
                 "text": "Oracle Huntress",
                 "isGood": true
