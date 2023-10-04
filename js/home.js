@@ -183,9 +183,7 @@ window.addEventListener("scroll", function() {
         titre5.style.right = "0px";
         slidecontent.style.opacity = '1';
         slidecontent.style.transform = "translateX(0)";
-        // } else if (scrollPosition > 4500 && scrollPosition < 5000) {
-        // slidecontent.style.opacity = '1';
-        // slidecontent.style.transform = "translateX(0)";
+
     } else {
         justiceimg.style.opacity = '0';
         justiceimg.style.transform = 'scale(0)';
