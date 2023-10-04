@@ -529,6 +529,21 @@ body {
     }
 }
 
+#close {
+    position: absolute;
+    top: .625rem;
+    right: .625rem;
+    background-color: inherit;
+    font-size: 1.5rem;
+    opacity: .5;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 2rem;
+    height: 1.7rem;
+    border-radius: 0px;
+}
+
 #affiche-resultat {
     position: relative;
     top: 50rem;
