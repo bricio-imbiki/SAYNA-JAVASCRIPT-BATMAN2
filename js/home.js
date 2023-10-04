@@ -130,6 +130,8 @@ var justiceimg = document.getElementById("justice-league-img");
 var slidecontent = document.querySelector('.slide-container');
 var contact = document.getElementById("contact");
 var citation = document.getElementById("citation");
+var persoImage = document.querySelector(".perso");
+var persoInfo = document.querySelector(".perso-info");
 window.addEventListener("scroll", function() {
     var scrollPosition = window.scrollY;
 
