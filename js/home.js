@@ -126,6 +126,9 @@ var desc4 = document.querySelector('.desc4');
 var hero = document.querySelector('.hero');
 
 var trailerImg = document.getElementById("trailer-img");
+var justiceimg = document.getElementById("justice-league-img");
+
+var citation = document.getElementById("citation");
 window.addEventListener("scroll", function() {
     var scrollPosition = window.scrollY;
 
@@ -150,26 +153,36 @@ window.addEventListener("scroll", function() {
         desc2.style.right = "0px";
         titre2.style.opacity = '1';
         desc2.style.opacity = '1';
-    } else if (scrollPosition > 2200 && scrollPosition < 2940) {
+    } else if (scrollPosition > 2200 && scrollPosition < 2900) {
         titre3.style.top = "-10px";
         titre3.style.right = "0px";
         desc3.style.top = "-10px";
         desc3.style.right = "0px";
         titre3.style.opacity = '1';
         desc3.style.opacity = '1';
-    } else if (scrollPosition > 3050 && scrollPosition < 3700) {
+    } else if (scrollPosition > 3000 && scrollPosition < 3500) {
         titre4.style.opacity = '1';
         desc4.style.opacity = '1';
         titre4.style.top = "-10px";
         titre4.style.right = "0px";
         desc4.style.top = "-10px";
         desc4.style.right = "0px";
-    } else if (scrollPosition > 3900 && scrollPosition < 4500) {
+    } else if (scrollPosition > 3500 && scrollPosition < 4000) {
+        titre4.style.opacity = '1';
+        desc4.style.opacity = '1';
+        titre4.style.top = "-10px";
+        titre4.style.right = "0px";
+        desc4.style.top = "-10px";
+        desc4.style.right = "0px";
+        justiceimg.style.opacity = '1';
+        justiceimg.style.transform = 'scale(1)';
+    } else if (scrollPosition > 4050 && scrollPosition < 4500) {
         titre5.style.opacity = '1';
         titre5.style.top = "-10px";
         titre5.style.right = "0px";
     } else {
-
+        justiceimg.style.opacity = '0';
+        justiceimg.style.transform = 'scale(0)';
         hero.style.opacity = '0';
         hero.style.top = "0px";
         hero.style.right = "925px";
@@ -215,7 +228,12 @@ document.addEventListener("DOMContentLoaded", function() {
         if (scrollPosition > 4600 && scrollPosition < 5200) {
             trailerImg.style.opacity = '1';
             trailerImg.style.transform = 'scale(1)';
+        } else if (scrollPosition > 5800 && scrollPosition < 6500) {
+            citation.style.opacity = '1';
+            citation.style.transform = 'scale(1)';
         } else {
+            citation.style.opacity = '0';
+            citation.style.transform = 'scale(0)';
             trailerImg.style.opacity = '0';
             trailerImg.style.transform = 'scale(0)';
         }

@@ -206,6 +206,10 @@ body {
     position: relative;
     margin-left: -10rem;
     z-index: 3;
+    opacity: 0;
+    transform: scale(1);
+    transition: transform 1s, opacity 1s;
+    transform-origin: center center;
 }
 
 .logo a img {
@@ -382,7 +386,7 @@ body {
 }
 
 .perso:hover {
-    transform: scale(1.17);
+    transform: scale(1.08);
     transition: transform 1s,
 }
 
@@ -513,6 +517,10 @@ button {
 
 #citation {
     margin: 90px;
+    opacity: 0;
+    transform: scale(1);
+    transition: transform 1s, opacity 1s;
+    transform-origin: center center;
 }
 
 #citation .item-citation {
