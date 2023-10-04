@@ -127,7 +127,8 @@ var hero = document.querySelector('.hero');
 
 var trailerImg = document.getElementById("trailer-img");
 var justiceimg = document.getElementById("justice-league-img");
-
+var slidecontent = document.querySelector('.slide-container');
+var contact = document.getElementById("contact");
 var citation = document.getElementById("citation");
 window.addEventListener("scroll", function() {
     var scrollPosition = window.scrollY;
@@ -180,9 +181,16 @@ window.addEventListener("scroll", function() {
         titre5.style.opacity = '1';
         titre5.style.top = "-10px";
         titre5.style.right = "0px";
+        slidecontent.style.opacity = '1';
+        slidecontent.style.transform = "translateX(0)";
+        // } else if (scrollPosition > 4500 && scrollPosition < 5000) {
+        // slidecontent.style.opacity = '1';
+        // slidecontent.style.transform = "translateX(0)";
     } else {
         justiceimg.style.opacity = '0';
         justiceimg.style.transform = 'scale(0)';
+        slidecontent.style.opacity = '0';
+        slidecontent.style.transform = "translateX(-100%)";
         hero.style.opacity = '0';
         hero.style.top = "0px";
         hero.style.right = "925px";
@@ -228,14 +236,32 @@ document.addEventListener("DOMContentLoaded", function() {
         if (scrollPosition > 4600 && scrollPosition < 5200) {
             trailerImg.style.opacity = '1';
             trailerImg.style.transform = 'scale(1)';
-        } else if (scrollPosition > 5800 && scrollPosition < 6500) {
-            citation.style.opacity = '1';
-            citation.style.transform = 'scale(1)';
+        } else if (scrollPosition > 5300 && scrollPosition < 5800) {
+            contact.style.opacity = '1';
+            contact.style.transform = "translateX(0)";
         } else {
-            citation.style.opacity = '0';
-            citation.style.transform = 'scale(0)';
+            contact.style.opacity = '0';
+
+            contact.style.transform = "translateX(-100%)";
             trailerImg.style.opacity = '0';
             trailerImg.style.transform = 'scale(0)';
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+
+    var scrollPositionToShow = 5800;
+    var scrollPositionToHide = 6500;
+
+    window.addEventListener("scroll", function() {
+        var scrollPosition = window.scrollY;
+
+        if (scrollPosition > scrollPositionToShow && scrollPosition < scrollPositionToHide) {
+            citation.style.transform = "translateX(0)";
+        } else {
+            citation.style.transform = "translateX(-100%)";
+
         }
     });
 });
