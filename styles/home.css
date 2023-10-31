@@ -313,7 +313,7 @@ body {
     opacity: 1;
 }
 
-.reseau .fleche1 {
+.reseau .fleche2 {
     margin-top: 20px;
     top: 217px;
     position: relative;
@@ -322,7 +322,7 @@ body {
     width: 90px;
 }
 
-.reseau .fleche2 {
+.reseau .fleche1 {
     margin-top: 20px;
     top: 227px;
     display: flex;
