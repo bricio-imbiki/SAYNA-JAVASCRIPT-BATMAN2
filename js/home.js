@@ -23,10 +23,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // Récupérez les éléments images par leur ID
     var scrollTriggerDown = document.getElementById('scrollTriggerDown');
     var scrollTriggerUp = document.getElementById('scrollTriggerUp');
+    var flecheDownElement = document.getElementById('scrollDownButton');
     var isMouseDownDown = false; // Variable pour suivre l'état du clic pour le défilement vers le bas
     var isMouseDownUp = false; // Variable pour suivre l'état du clic pour le défilement vers le haut
 
     // Fonction pour effectuer le défilement vers le bas
+    function flecheDown() {
+        window.scrollBy({
+            top: 500, // Augmentez la valeur pour un défilement vers le bas plus rapide
+            behavior: 'smooth'
+        });
+    }
+
     function scrollDown() {
         window.scrollBy({
             top: 9000, // Augmentez la valeur pour un défilement vers le bas plus rapide
@@ -43,10 +51,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Ajoutez un gestionnaire d'événements au clic sur l'image pour le défilement vers le bas
-    scrollTriggerDown.addEventListener('mousedown', function(e) {
+    flecheDownElement.addEventListener('mousedown', function(e) {
         // Empêchez le défilement par défaut au clic
         e.preventDefault();
 
+        // Démarrez le défilement vers le bas
+        flecheDown();
+
+        // Définissez l'état du clic vers le bas comme enfoncé
+        isMouseDownDown = true;
+    });
+
+
+
+    scrollTriggerDown.addEventListener('mousedown', function(e) {
+        // Empêchez le défilement par défaut au clic
+        e.preventDefault();
         // Démarrez le défilement vers le bas
         scrollDown();
 
@@ -58,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function() {
     scrollTriggerUp.addEventListener('mousedown', function(e) {
         // Empêchez le défilement par défaut au clic
         e.preventDefault();
-
         // Démarrez le défilement vers le haut
         scrollUp();
 
