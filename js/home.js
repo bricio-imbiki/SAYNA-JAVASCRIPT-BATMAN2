@@ -62,8 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
         isMouseDownDown = true;
     });
 
-
-
     scrollTriggerDown.addEventListener('mousedown', function(e) {
         // Empêchez le défilement par défaut au clic
         e.preventDefault();
