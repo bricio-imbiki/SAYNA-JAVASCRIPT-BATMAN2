@@ -14,7 +14,7 @@ function updateImagePosition() {
 // Écoutez l'événement de scroll pour mettre à jour la position des images
 window.addEventListener('scroll', updateImagePosition);
 
-// Appelez la fonction initiale pour positionner les images au chargement de la page
+// Appelez la fonction initiale pour positionnement les images au chargement de la page
 updateImagePosition();
 
 
