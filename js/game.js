@@ -22,7 +22,7 @@ var imagebat = document.querySelector('.imagebat');
 // Récupérez l'élément de texte <h2> par son ID
 var animatedText = document.getElementById('animated-text');
 
-// Définissez la position à laquelle vous souhaitez déclencher l'animation manuellement
+// la position à laquelle vous souhaitez déclencher l'animation manuellement
 var triggerPosition = 300; // Vous pouvez ajuster cette valeur en pixels
 
 // Fonction pour vérifier si l'élément est visible à l'écran
