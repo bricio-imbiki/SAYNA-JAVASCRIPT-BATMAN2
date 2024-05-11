@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Batman | Game</title>
+    <link rel="stylesheet" href="../styles/game.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Favicons -->
+    <link href="../assets/Illustrations/game/Batgame_6.png" rel="icon">
+    <meta name="author" content="Bricio Imbiki">
+    <meta name="description" content="SAYNA-JAVASCRIPT-PROJET1">
+    <meta property="og:description" content="This is a project quizz javascript at SAYNA">
+    <meta property="og:title" content="Metadata; The HTML &lt;head&gt;, on MDN">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/Logos/logohome.png" alt="Logo"></a>
+        </div>
+        <nav class="navbar">
+            <a href="../index.html">HOME</a>
+            <a href="game.html">GAME</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div>
+            <h1 class="home-content">LET'S PLAY A <br> LITTLE GAME...</h1>
+            <div class="reseau">
+                <img src="../assets/Logos/logo_bat_fl1.png" alt="" class="fleche1" id="scrollTriggerUp"><br>
+                <img src="../assets/Logos/icon_facebook.png" alt="" class="logo_fb"><br>
+                <img src="../assets/Logos/icon_ig.png" alt="" class="logo_ig"><br>
+                <img src="../assets/Logos/icon_tw.png" alt="" class="logo_twitter">
+                <img src="../assets/Logos/logo_twitter-clone.png" alt="" class="logo_twitter-clone">
+                <img src="../assets/Logos/logo_bat_fl2.png" alt="" class="fleche2" id="scrollTriggerDown"><br>
+            </div>
+
+            <div class="batgame" id="batgame">
+                <img src="../assets/Logos/down_header.png" alt="fleche-bas" id="scrollDownButton" class="fleche_down"><br>
+                <h2 id="animated-text">CONNAISSEZ VOUS BIEN LE CHEVALIER NOIR ? </h2>
+                <img src="../assets/Illustrations/game/Batgame_2.png" alt="Batgame_2" class="imagebat" />
+            </div>
+            <p></p>
+            <div class="btn-box">
+                <a href="#" id="startQuizButton">DÉMARRER LE QUIZ</a>
+            </div>
+            <!-- Ajoutez le contenu du quiz mais initialement masqué -->
+            <div class="ma-balise" id="quizContainer" style="display: none;">
+                <!-- Le contenu du quiz que vous avez fourni -->
+
+                <!--    QUIZ 1-->
+
+
+                <section id="questionnaire" class="questionnaires">
+                    <div class="compteur">
+                        <h1><span class="debut-compteur"></span>/<span class="fin-compteur"></span></h1>
+                    </div>
+                    <div class="question">
+                        <div class="ct">
+                            <h1 class="sujet"></h1>
+                        </div>
+
+                        <div id="ct2" class="ct2 hidden"><br>
+
+                            <div class="case-cont1">
+                                <input type="checkbox" name="case1" id="case1" class="cases">
+                                <label for="case1" class="choix1"></label>
+                            </div>
+                            <br>
+                            <div class="case-cont2">
+                                <input type="checkbox" name="case2" id="case2" class="cases">
+                                <label for="case2" class="choix2"></label>
+                            </div>
+                            <br>
+                            <div class="case-cont3">
+                                <input type="checkbox" name="case3" id="case3" class="cases">
+                                <label for="case3" class="choix3"></label>
+                            </div>
+                            <br>
+                            <!-- Ajoutez le quatrième champ de case à cocher et le quatrième choix de réponse ici -->
+                            <div class="case-cont4">
+                                <input type="checkbox" name="case4" id="case4" class="cases" style="display: none;">
+                                <label for="case4" class="choix4" style="display: none;"></label>
+                            </div>
+
+
+                            <img src="" id="perso1" alt="premier image" style="display: block;">
+                            <img src="" id="perso2" alt="premier image">
+                            <img src="" id="perso3" alt="premier image">
+                            <img src="" id="perso4" alt="premier image">
+                            <img src="" id="perso5" alt="premier image">
+                            <img src="" id="perso6" alt="premier image">
+                            <img src="" id="perso7" alt="premier image">
+                            <img src="" id="perso8" alt="premier image">
+                            <img src="" id="perso9" alt="premier image">
+                            <img src="" id="perso10" alt="premier image">
+                            <!-- Bouton pour le quiz (initialement masqué) -->
+
+                            <div class="quizButton" id="quizButton">
+                                <a href="#" id="btn-change1">QUESTION SUIVANTE</a>
+                            </div>
+                            <div class="quizresultat" id="quizresultat" style="display: none;">
+                                <a href="#" id="btn-change2">VOIR MON RÉSULTAT</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="affiche-resultat" class="card" style="display: none;">
+                <div class="card-body">
+                    <button id="close">&times;</button>
+                    <h1 class="card-title" id="resultat"></h1>
+                    <p class="card-text" id="message"></p>
+                    <div class="retour" id="retour">
+                        <a href="#" id="recommencer" class="btn btn-primary">RECOMMENCER LE QUIZ</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div>
+            <img src="../assets/Logos/icon_WB.png" class="icon_wb">
+            <p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
+        </div>
+        <div class="Res">
+            <img src="../assets/Logos/logo_sayna_white.png" alt="Sayna">
+            <img src="../assets/Logos/icon_x.png" class="x" alt="x">
+            <img src="../assets/Logos/icon_DC.png" alt="dc">
+            <img src="../assets/Logos/icon_facebook.png" class="reseau" alt="fbf">
+            <img src="../assets/Logos/icon_ig.png" class="reseau" alt="ig">
+            <img src="../assets/Logos/icon_tw.png" class="reseau" alt="tw">
+        </div>
+    </footer>
+    <script src="../js/game.js"></script>
+
+</body>
+
+</html>
